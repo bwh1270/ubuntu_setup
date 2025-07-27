@@ -1,4 +1,4 @@
-# Ubuntu 22.04 Initial Setup Script
+# Ubuntu Initial Setup Script
 
 A clean and customizable setup script to bootstrap development environments on **Ubuntu 22.04**.
 
@@ -12,30 +12,32 @@ This project includes:
 
 ---
 
-## 📁 Project Structure
+## Project Structure
+```
 .
 ├── common/
-│ ├── install_code_server.sh # Installs VS Code Server
-│ ├── install_dev_tools.sh # Installs general development tools
-│ └── install_packages.sh # Installs essential APT packages
+│   ├── install_code_server.sh     # Installs VS Code Server
+│   ├── install_dev_tools.sh       # Installs dev tools
+│   └── install_packages.sh        # Installs APT packages
 ├── personal/
-│ ├── d2coding_install.sh # (Optional) Install D2Coding font
-│ ├── install_mavros.sh # (Optional) ROS MAVROS install script
-│ └── subl.sh # (Optional) Sublime Text launcher
+│   ├── d2coding_install.sh        # (Optional) Installs D2Coding font
+│   ├── install_mavros.sh          # (Optional) ROS1 MAVROS installer
+│   └── subl.sh                    # (Optional) Sublime Text launcher
 ├── to_copy/
-│ ├── aliases # bash_aliases
-│ ├── ranger # ranger config
-│ ├── tmux # tmux.conf
-│ └── vim # vimrc
-├── ubuntu_setup.sh # 🔥 Main setup script
+│   ├── aliases                    # bash aliases
+│   ├── ranger                     # ranger config
+│   ├── tmux                       # tmux.conf
+│   └── vim                        # vimrc
+├── ubuntu_setup.sh               # Main setup script
 ├── LICENSE
 └── README.md
+```
 
 ---
 
-## 🚀 How to Use
+## How to Use
 
-> ⚠️ Do **NOT** run this script as `root`. It is intended to be run as a normal user.
+> Do **NOT** run this script as `root`. It is intended to be run as a normal user.
 
 ```
 git clone https://github.com/bwh1270/ubuntu_setup.git
@@ -59,7 +61,3 @@ You can modify or extend the following:
 
 ### License
 This project is licensed under the MIT License. See ```LICENSE``` for details.
-
-### Author
-Created by Woohyun Byun
-Feel free to fork or modify for your own use!
